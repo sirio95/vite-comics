@@ -36,8 +36,8 @@ export default{
 
 <template>
     <div id="blue_stripe">
-        <ul v-for="element in iconsName" :key="element" id="icons">
-            <li>
+        <ul id="icons">
+            <li v-for="element in iconsName" :key="element" class="icon">
                 <a href="">
                     <img :src="getImageByURL(element.src)" alt="element.name" class="icona">
                     <div class="testo">{{element.name}}</div>

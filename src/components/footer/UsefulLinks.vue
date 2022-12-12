@@ -18,26 +18,26 @@ export default{
 <template>
     <div class="lista">
         <h3>DC COMICS</h3>
-        <ul class="links" v-for="element in pages" :key="element">
-            <li><a href="">{{element}}</a></li>
+        <ul class="links">
+            <li v-for="element in pages" :key="element"><a href="">{{element}}</a></li>
         </ul>
     </div>
     <div class="lista">
         <h3>SHOP</h3>
-        <ul class="links" v-for="element in shop" :key="element">
-            <li><a href="">{{element}}</a></li>
+        <ul class="links">
+            <li v-for="element in shop" :key="element"><a href="">{{element}}</a></li>
         </ul>
     </div>
     <div class="lista">
         <h3>DC</h3>
-        <ul class="links" v-for="element in terms" :key="element">
-            <li><a href="">{{element}}</a></li>
+        <ul class="links">
+            <li v-for="element in terms" :key="element"><a href="">{{element}}</a></li>
         </ul>
     </div>
     <div class="lista">
         <h3>SITES</h3>
-        <ul class="links" v-for="element in sites" :key="element">
-            <li><a href="">{{element}}</a></li>
+        <ul class="links">
+            <li v-for="element in sites" :key="element"><a href="">{{element}}</a></li>
         </ul>
     </div>
 </template>

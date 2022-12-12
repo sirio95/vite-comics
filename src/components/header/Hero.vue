@@ -18,8 +18,8 @@
         <a href="#" id="logo">
             <img src= "../../assets/img/dc-logo.png" alt="">
         </a>
-        <ul v-for= "element in pages" :key="element" id="nav">
-            <li class="nav_item"><a href="">{{element}}</a></li>
+        <ul id="nav">
+            <li v-for= "element in pages" :key="element" class="nav_item"><a href="">{{element}}</a></li>
         </ul>
     </div>
     

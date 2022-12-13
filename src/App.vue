@@ -19,11 +19,9 @@ export default{
   <AppFooter/>
 </template>
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
+<style lang="scss">
+  *{
+    box-sizing: border-box;
+  }
 
 </style>

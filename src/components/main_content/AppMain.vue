@@ -102,16 +102,25 @@ export default{
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @use "../../assets/scss/variables.scss";    
+
     #main{
         min-width:1280px;
         position:relative;
             div{    
-                width: 250px;
-                height:50px;
+                width: 200px;
+                height:40px;
                 background-color: variables.$blue_special;
                 color:#fff;
+                font-size:1rem;
+                padding: 0.5rem;
+                position: absolute;
+                top: -20px;
+                left:15%;
+            }
+
+            button{
 
             }
     }

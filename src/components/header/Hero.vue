@@ -53,15 +53,15 @@
     </div>   
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @use "../../assets/scss/variables.scss";
 
     #header{
+        @include variables.flex_row_around;
         min-width:1280px;
         height:80px;
         background-color:#fff;
         padding:0;
-        @include flex_row_around;
 
             #logo{
                 flex-basis: 10%;
@@ -72,8 +72,8 @@
             }
 
             #nav{
+                @include variables.flex_row_around;
                 flex-basis: 70%;
-                @include flex_row_around;
 
                     .nav_item{
                         list-style: none;

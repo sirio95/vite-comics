@@ -1,24 +1,22 @@
 <script>
-import Hero from './components/header/Hero.vue';
-import BlueStripe from './components/footer/BlueStripe.vue';
-import UsefulLinks from './components/footer/UsefulLinks.vue';
-import Socials from './components/footer/Socials.vue';
+import AppHeader from './components/header/AppHeader.vue';
+import AppFooter from './components/footer/AppFooter.vue';
+import AppMain from './components/main_content/AppMain.vue';
+
 
 export default{
   components: {
-    Hero,
-    BlueStripe,
-    UsefulLinks,
-    Socials,
-  }
+    AppHeader,
+    AppMain,
+    AppFooter,
+  },
 }
 </script>
 
 <template>
-  <Hero/>
-  <BlueStripe/>
-  <UsefulLinks/>
-  <Socials/>
+  <AppHeader/>
+  <AppMain/>
+  <AppFooter/>
 </template>
 
 <style scoped>

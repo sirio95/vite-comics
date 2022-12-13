@@ -54,15 +54,14 @@
 </template>
 
 <style lang="scss">
-
-    @use "../../assets/scss/variables.scss" as *;
+    @use "../../assets/scss/variables.scss";
 
     #header{
         min-width:1280px;
         height:80px;
         background-color:#fff;
         padding:0;
-        display: $flex_row_around;
+        @include flex_row_around;
 
             #logo{
                 flex-basis: 10%;
@@ -74,14 +73,14 @@
 
             #nav{
                 flex-basis: 70%;
-                display: $flex_row_around;
+                @include flex_row_around;
 
-                .nav_item{
-                    list-style: none;
-                        a{
-                            text-transform: uppercase;
-                        }
-                }
+                    .nav_item{
+                        list-style: none;
+                            a{
+                                text-transform: uppercase;
+                            }
+                    }
             }
     }
 </style>

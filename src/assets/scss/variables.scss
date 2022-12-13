@@ -1,5 +1,11 @@
+/* Mixin */
+
 @mixin flex_row_around {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
+/* Colori */
+
+$blue_special : #0282f9;

@@ -89,7 +89,7 @@ export default{
 </script>
 
 <template>
-    <section>
+    <section id="main">
         <div>CURRENT SERIES</div>
         <ComicCards v-for="(card, index) in cards" :key="index"
             :img= "card.thumb"
@@ -102,6 +102,17 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss">
+    @use "../../assets/scss/variables.scss";    
+    #main{
+        min-width:1280px;
+        position:relative;
+            div{    
+                width: 250px;
+                height:50px;
+                background-color: variables.$blue_special;
+                color:#fff;
 
+            }
+    }
 </style>

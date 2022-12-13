@@ -90,14 +90,17 @@ export default{
 
 <template>
     <section id="main">
-        <div>CURRENT SERIES</div>
-        <ComicCards v-for="(card, index) in cards" :key="index"
+        <div id="btn_up">CURRENT SERIES</div>
+        <section id="cards">
+            <ComicCards v-for="(card, index) in cards" :key="index"
             :img= "card.thumb"
             :descr= "card.series"
             :price= "card.price"
             :alt= "card.type"
-        />
-        <button>LOAD MORE</button>
+            />
+        </section>
+        
+        <button id="btn_down">LOAD MORE</button>
     </section>
 
 </template>
@@ -108,7 +111,7 @@ export default{
     #main{
         min-width:1280px;
         position:relative;
-            div{    
+            #btn_up{    
                 width: 200px;
                 height:40px;
                 background-color: variables.$blue_special;
@@ -120,8 +123,23 @@ export default{
                 left:15%;
             }
 
-            button{
+            #btn_down{
+                width: 200px;
+                height:40px;
+                background-color: variables.$blue_special;
+                color:#fff;
+                font-size:1rem;
+                padding: 0.5rem;
+                margin: 10px 35%;
+            }
 
+            #cards{
+                width:100%;
+                height: 600px;
+                padding: 1rem 50px;
+                @include variables.flex_row_around;
+                flex-wrap: wrap;
             }
     }
+    
 </style>

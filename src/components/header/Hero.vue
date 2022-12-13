@@ -50,10 +50,38 @@
         <ul id="nav">
             <li v-for= "(element, index) in pages" :key="index" class="nav_item"><a href="element.url">{{element.text}}</a></li>
         </ul>
-    </div>
-    
+    </div>   
 </template>
 
-<style>
+<style lang="scss">
 
+    @use "../../assets/scss/variables.scss" as *;
+
+    #header{
+        min-width:1280px;
+        height:80px;
+        background-color:#fff;
+        padding:0;
+        display: $flex_row_around;
+
+            #logo{
+                flex-basis: 10%;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+            }
+
+            #nav{
+                flex-basis: 70%;
+                display: $flex_row_around;
+
+                .nav_item{
+                    list-style: none;
+                        a{
+                            text-transform: uppercase;
+                        }
+                }
+            }
+    }
 </style>

@@ -4,7 +4,7 @@ export default{
         img: String,
         descr: String,
         alt: String,
-        price: Number,
+        price: String,
     }
 }
 </script>
